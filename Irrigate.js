@@ -8,10 +8,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.status(200);
-    res.send('Funcionando');
-});
 
 app.get('/irrigation', (req, res)=>{
     let datos = req.body;
@@ -51,7 +47,7 @@ Number.prototype.round = function(p) {
 
 
 app.listen(port, () => {
-    console.log(`Practica 3 listening on port ${port}`);
+    console.log(`Listening on port ${port}`);
 })
 
 
