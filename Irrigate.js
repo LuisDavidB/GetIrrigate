@@ -28,7 +28,7 @@ app.get('/irrigation', (req, res)=>{
         res.statusCode= 200;
         res.send(nuevosdatos);
     }else {
-        res.statusCode=100;
+        res.statusCode=200;
         res.send({});
     }
 });
